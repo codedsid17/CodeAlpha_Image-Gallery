@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A premium visual gallery showcasing nature, travel, food, and more.">
+    <title>Lumière — Curated Visual Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-ring"></div>
+            <div class="loader-text">LUMIÈRE</div>
+        </div>
+    </div>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-mark">L</span>
+                <span class="logo-text">umière</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#carousel" class="nav-link">Gallery</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#about" class="nav-link">About Project</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="container hero-content">
+            <span class="hero-eyebrow reveal">Capturing Light, Preserving Moments</span>
+            <h1 class="hero-title reveal">
+                Discover the Art<br>
+                <em>of Light & Form</em>
+            </h1>
+            <p class="hero-description reveal">
+                A carefully curated collection of photography from around the world.
+                Explore stunning visuals that tell stories, evoke emotion, and celebrate beauty.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#carousel" class="btn btn-primary">
+                    <span>Explore Gallery</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M13 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-ghost">About Project</a>
+            </div>
+        </div>
+        <a href="#carousel" class="scroll-hint" aria-label="Scroll down">
+            <span class="scroll-line"></span>
+            <span class="scroll-text">Scroll</span>
+        </a>
+    </section>
+    <section class="carousel-section" id="carousel">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow">Featured</span>
+                <h2 class="section-title">The Cover Collection</h2>
+                <p class="section-subtitle">Hand-picked visuals that define this season's mood.</p>
+            </div>
+            <div class="carousel" id="carouselEl">
+                <button class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide" data-index="0">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80" alt="Mountain landscape" loading="lazy">
+                        <div class="slide-caption">
+                            <h3>Aurora Peaks</h3>
+                            <p>Norway</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="1">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80" alt="Paris street" loading="lazy">
+                        <div class="slide-caption">
+                            <h3>City of Light</h3>
+                            <p>Paris</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="2">
+                        <img src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913?w=1200&q=80" alt="Coastal cliff" loading="lazy">
+                        <div class="slide-caption">
+                            <h3>Cliffside</h3>
+                            <p>Portugal</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="3">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80" alt="Forest path" loading="lazy">
+                        <div class="slide-caption">
+                            <h3>Whispering Woods</h3>
+                            <p>Oregon</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="4">
+                        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200&q=80" alt="Lake reflection" loading="lazy">
+                        <div class="slide-caption">
+                            <h3>Mirror Lake</h3>
+                            <p>Switzerland</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="5">
+                        <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=1200&q=80" alt="Beach scene" loading="lazy">
+                        <div class="slide-caption">
+                            <h3>Golden Shore</h3>
+                            <p>Maldives</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="6">
+                        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=80" alt="Countryside" loading="lazy">
+                        <div class="slide-caption">
+                            <h3>Quiet Valleys</h3>
+                            <p>Tuscany</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-arrow carousel-next" id="carouselNext" aria-label="Next">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section" id="categories">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow">Collection</span>
+                <h2 class="section-title">Explore by Category</h2>
+                <p class="section-subtitle">Filter through carefully organized themes and aesthetics.</p>
+            </div>
+            <div class="filter-bar" id="filterBar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="travel">Travel</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="animals">Animals</button>
+                <button class="filter-btn" data-filter="architecture">Architecture</button>
+                <button class="filter-btn" data-filter="people">People</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+            </div>
+            <div class="empty-state" id="emptyState" hidden>
+                <div class="empty-icon">✦</div>
+                <p>No images found in this category yet.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-visual">
+                <div class="about-image-wrap">
+                    <img src="https://i.pinimg.com/1200x/79/44/52/794452fe5f406bc7819bf4ec762e41f9.jpg" alt="Workspace" loading="lazy">
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-eyebrow">About This Gallery</span>
+                <h2 class="section-title">Built with care, by a curious developer.</h2>
+                <p>
+                    This gallery was designed and developed by Siddhi as a front-end project.
+                    The goal was to combine modern web design with interactive user experiences through
+                    responsive layouts, smooth animations, image filtering, and lightbox functionality.
+                </p>
+                <p>
+                    Every section of the website focuses on usability, aesthetics, and performance.
+                    The project demonstrates skills in HTML, CSS, and JavaScript while creating an
+                    engaging platform for showcasing visual content.
+                </p>
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">◈</div>
+                        <h4>Responsive Design</h4>
+                        <p>Layouts adapt seamlessly across desktop, tablet, and mobile screens using fluid grids and flexible components.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">✦</div>
+                        <h4>Interactive Gallery</h4>
+                        <p>Filter by category, browse the coverflow carousel, and open a fullscreen lightbox — all with smooth, intentional transitions.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">◉</div>
+                        <h4>Modern UI/UX</h4>
+                        <p>Clean typography, generous whitespace, a light/dark mode toggle, and micro-interactions designed to feel premium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-mark">L</span>
+                    <span class="logo-text">umière</span>
+                </a>
+                <p>A curated visual gallery.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#carousel">Gallery</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Project</h5>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Lumière. Designed &amp; developed by Siddhi.</p>
+            <p>A personal front-end project.</p>
+        </div>
+    </footer>
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
